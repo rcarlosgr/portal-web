@@ -1251,6 +1251,7 @@ height:380px !important;
     background: hsl(210, 50%, 15%);
     width: 70%;
     height: calc(100% - var(--height-header));
+    overflow-y: scroll;
 }
 .content-menu-mobile > .menu-mobile{
     padding: 1rem;
