@@ -2026,10 +2026,21 @@ height:380px !important;
 .btn-primary{
     background: var(--color-header);
 }
-.messageForm{
-    background: hsl(120, 50%, 70%);
+.message-form-success{
+    background: hsl(120, 50%, 80%);
     color: hsl(120, 50%, 20%);
     padding: 1rem;
     border-radius: .5rem;
+    text-align: center;
+}
+.message-form-error{
+    background: hsl(0, 50%, 80%);
+    color: hsl(0, 50%, 20%);
+    padding: 1rem;
+    border-radius: .5rem;
+    text-align: center;
+}
+.loader-fetch{
+    color: hsl(120, 50%, 20%);
     text-align: center;
 }

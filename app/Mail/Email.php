@@ -16,13 +16,11 @@ class Email extends Mailable
      *
      * @return void
      */
-    public $fromEmail;
-    public $title;
+    public $subject;
     public $data;
-    public function __construct($fromEmail,$title, $data)
+    public function __construct($subject, $data)
     {
-        $this->fromEmail = $fromEmail;
-        $this->title = $title;
+        $this->subject = $subject;
         $this->data = $data;
     }
 
@@ -33,9 +31,9 @@ class Email extends Mailable
      */
     public function build()
     {
-        return $this->from($this->fromEmail, env('MAIL_FROM_NAME'))
+        return $this->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'))
                     ->view('email')
-                    ->subject($this->title)
+                    ->subject($this->subject)
                     ->with($this->data);
     }
 }

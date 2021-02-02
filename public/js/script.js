@@ -468,6 +468,10 @@ if(id('modalProjectNine')){
 const validateForm = (e) => {
     e.preventDefault()
     data = new FormData(id('formContact'))
+    id('messageForm').innerHTML = '... cargando'
+    id('messageForm').classList.remove('message-form-success')
+    id('messageForm').classList.remove('message-form-error')
+    id('messageForm').classList.add('loader-fetch')
 
     fetch('/enviar-email', {
         method: 'POST',
@@ -477,9 +481,18 @@ const validateForm = (e) => {
     .then(res => {
         if (res.type === 'error') {
             id('messageForm').innerHTML = res.message
+            id('messageForm').classList.remove('message-form-success')
+            id('messageForm').classList.remove('loader-fetch')
+            id('messageForm').classList.add('message-form-error')
+
         }else if (res.type === 'success'){
             id('messageForm').innerHTML = res.message
-            id('messageForm').classList.add('messageForm')
+            id('messageForm').classList.remove('message-form-error')
+            id('messageForm').classList.remove('loader-fetch')
+            id('messageForm').classList.add('message-form-success')
+
+            id('formContact').reset()
+
         }
 
     })

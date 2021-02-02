@@ -5,8 +5,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-                <h3 class="section-title">Envianos tu mensaje</h3>
-
+                <h3 class="section-title">Contacta con nosotros</h3>
+                <p>Rellena nuestro formulario y nos pondremos en contacto contigo
+                    lo antes posible.
+                </p>
                 <form class="form-light mt-20" role="form" id="formContact">
                     @csrf
                     <div class="form-group">
@@ -35,7 +37,7 @@
                         <label>Mensaje</label>
                         <textarea class="form-control" name="message" id="message" placeholder="Escriba su mensaje aqui" required style="height:100px;"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary" id="btnSendMessage">Enviar mensaje</button><p><br/></p>
+                    <button type="submit" class="btn btn-primary" id="btnSendMessage">Enviar</button><p><br/></p>
                     <div id="messageForm"></div>
                 </form>
             </div>
