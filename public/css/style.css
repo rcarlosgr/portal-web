@@ -1423,7 +1423,6 @@ height:380px !important;
     cursor: pointer;
 }
 .our-team-item:hover{
-    width: 72%;
     box-shadow: 0 0 3rem  hsl(0, 0%, 70%);
     transition: width .5s;
 }
