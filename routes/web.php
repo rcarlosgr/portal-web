@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmailController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,6 +18,7 @@ Route::get('/', function () {
     // return view('welcome');
     return view('home');
 });
+
 Route::get('/acerca-de-nosotros', function () {
     return view('about');
 });
@@ -38,3 +40,5 @@ Route::get('/responsabilidad-social', function () {
 Route::get('/contacto', function () {
     return view('contact');
 });
+
+Route::post('/enviar-email', [EmailController::class, 'getEmail']);

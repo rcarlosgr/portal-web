@@ -2,223 +2,172 @@
 @section('title', "Cursos")
 
 @section('content')
-    <div id="courses">
-        <section class="container">
-            <h3>Cursos</h3>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="course-item" id="courseItemOne">
-                        <i class="fa fa-cogs fa-5x"></i>
-                        <div class="text">
-                            <h3>Responsive Design</h3>
+    <div class="container">
+        <h3>Cursos</h3>
+        <div class="courses">
+            <div class="content-courses">
+                <div class="course-item" id="courseItemOne">
+                    <div class="course-item-header">
+                        <img src="{{ secure_asset('images/courses/img1.png') }}" alt="">
+                    </div>
+                    <div class="course-item-body">
+                        <h4 class="course-item-title">Matlab y Simulink</h4>
+                    </div>
+                </div>
+                <div class="modal-course-item" id="modalCourseOne">
+                    <div class="content-modal-course">
+                        <div class="icon-close-modal-course" id="closeModalCourseOne">X</div>
+                        <div class="modal-course-header">
+                            <h4>Matlab y Simulink</h4>
+                        </div>
+                        <div class="modal-course-body">
+                            <p>
+                                Capacitación en Matlab y Simulink para el modelamiento y simulación de procesos.
+                            </p>
+                        </div>
+                        <div class="modal-course-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Inscripción</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="container-course-modal" id="modalCourseOne">
-                    <div class="content-course-modal" id="contentModalCourseOne">
-                        <div class="course-modal-header">
-                            <div class="icon-close" id="closeModalCourseOne">X</div>
-                            <h3>Responsive Design</h3>
+
+
+                <div class="course-item" id="courseItemTwo">
+                    <div class="course-item-header">
+                        <img src="{{ secure_asset('images/courses/img2.png') }}" alt="">
+                    </div>
+                    <div class="course-item-body">
+                        <h4 class="course-item-title">Python</h4>
+                    </div>
+                </div>
+                <div class="modal-course-item" id="modalCourseTwo">
+                    <div class="content-modal-course">
+                        <div class="icon-close-modal-course" id="closeModalCourseTwo">X</div>
+                        <div class="modal-course-header">
+                            <h4>Python</h4>
                         </div>
-                        <div class="course-modal-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <div class="modal-course-body">
+                            <p>
+                                Capacitación en Python para la implementación de Bases de Datos, Machine Learning y Automatización.
+                            </p>
                         </div>
-                        <div class="course-modal-footer">
-                            <a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
+                        <div class="modal-course-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Inscripción</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="course-item" id="courseItemTwo">
-                        <i class="fa fa-leaf fa-5x"></i>
-                        <div class="text">
-                            <h3>HTML5/CSS3</h3>
+
+
+                <div class="course-item" id="courseItemThree">
+                    <div class="course-item-header">
+                        <img src="{{ secure_asset('images/courses/img3.png') }}" alt="">
+                    </div>
+                    <div class="course-item-body">
+                        <h4 class="course-item-title">Macros</h4>
+                    </div>
+                </div>
+                <div class="modal-course-item" id="modalCourseThree">
+                    <div class="content-modal-course">
+                        <div class="icon-close-modal-course" id="closeModalCourseThree">X</div>
+                        <div class="modal-course-header">
+                            <h4>Macros</h4>
+                        </div>
+                        <div class="modal-course-body">
+                            <p>
+                                Capacitación en Macros para la implementación de Bases de Datos y Automatización de procedimientos digitales.
+                            </p>
+                        </div>
+                        <div class="modal-course-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Inscripción</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="container-course-modal" id="modalCourseTwo">
-                    <div class="content-course-modal" id="contentModalCourseTwo">
-                        <div class="course-modal-header">
-                            <div class="icon-close" id="closeModalCourseTwo">X</div>
-                            <h3>HTML5/CSS3</h3>
+
+
+                <div class="course-item" id="courseItemFour">
+                    <div class="course-item-header">
+                        <img src="{{ secure_asset('images/courses/img4.png') }}" alt="">
+                    </div>
+                    <div class="course-item-body">
+                        <h4 class="course-item-title">Sistemas de automatización PID</h4>
+                    </div>
+                </div>
+                <div class="modal-course-item" id="modalCourseFour">
+                    <div class="content-modal-course">
+                        <div class="icon-close-modal-course" id="closeModalCourseFour">X</div>
+                        <div class="modal-course-header">
+                            <h4>Sistemas de automatización PID</h4>
                         </div>
-                        <div class="course-modal-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <div class="modal-course-body">
+                            <p>
+                                Capacitación en sistemas de automatización PID para automatización de procesos continuos.
+                            </p>
                         </div>
-                        <div class="course-modal-footer">
-                            <a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
+                        <div class="modal-course-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Inscripción</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="course-item" id="courseItemThree">
-                        <i class="fa fa-tachometer fa-5x"></i>
-                        <div class="text">
-                            <h3>Web Designing</h3>
+
+
+                <div class="course-item" id="courseItemFive">
+                    <div class="course-item-header">
+                        <img src="{{ secure_asset('images/courses/img5.png') }}" alt="">
+                    </div>
+                    <div class="course-item-body">
+                        <h4 class="course-item-title">Power Bi</h4>
+                    </div>
+                </div>
+                <div class="modal-course-item" id="modalCourseFive">
+                    <div class="content-modal-course">
+                        <div class="icon-close-modal-course" id="closeModalCourseFive">X</div>
+                        <div class="modal-course-header">
+                            <h4>Power Bi</h4>
+                        </div>
+                        <div class="modal-course-body">
+                            <p>
+                                Capacitación en Análisis de Datos con Power Bi.
+                            </p>
+                        </div>
+                        <div class="modal-course-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Inscripción</button></a>
                         </div>
                     </div>
                 </div>
-                <div class="container-course-modal" id="modalCourseThree">
-                    <div class="content-course-modal" id="contentModalCourseThree">
-                        <div class="course-modal-header">
-                            <div class="icon-close" id="closeModalCourseThree">X</div>
-                            <h3>Web Designing</h3>
+
+
+                <div class="course-item" id="courseItemSix">
+                    <div class="course-item-header">
+                        <img src="{{ secure_asset('images/courses/img6.png') }}" alt="">
+                    </div>
+                    <div class="course-item-body">
+                        <h4 class="course-item-title">R y MiniTab</h4>
+                    </div>
+                </div>
+                <div class="modal-course-item" id="modalCourseSix">
+                    <div class="content-modal-course">
+                        <div class="icon-close-modal-course" id="closeModalCourseSix">X</div>
+                        <div class="modal-course-header">
+                            <h4>R y MiniTab</h4>
                         </div>
-                        <div class="course-modal-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        <div class="modal-course-body">
+                            <p>
+                                Capacitación en análisis estadístico con R y MiniTab.
+                            </p>
                         </div>
-                        <div class="course-modal-footer">
-                            <a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
+                        <div class="modal-course-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Inscripción</button></a>
                         </div>
                     </div>
                 </div>
+
             </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="course-item" id="courseItemFour">
-                        <i class="fa fa-eye fa-5x"></i>
-                        <div class="text">
-                            <h3>Web App Dev</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-course-modal" id="modalCourseFour">
-                    <div class="content-course-modal" id="contentModalCourseFour">
-                        <div class="course-modal-header">
-                            <div class="icon-close" id="closeModalCourseFour">X</div>
-                            <h3>Web App Dev</h3>
-                        </div>
-                        <div class="course-modal-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <div class="course-modal-footer">
-                            <a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="course-item" id="courseItemFive">
-                        <i class="fa fa-quote-right fa-5x"></i>
-                        <div class="text">
-                            <h3>Data Base</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-course-modal" id="modalCourseFive">
-                    <div class="content-course-modal" id="contentModalCourseFive">
-                        <div class="course-modal-header">
-                            <div class="icon-close" id="closeModalCourseFive">X</div>
-                            <h3>Data Base</h3>
-                        </div>
-                        <div class="course-modal-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <div class="course-modal-footer">
-                            <a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="course-item" id="courseItemSix">
-                        <i class="fa fa-arrows fa-5x"></i>
-                        <div class="text">
-                            <h3>Mobile App Dev</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-course-modal" id="modalCourseSix">
-                    <div class="content-course-modal" id="contentModalCourseSix">
-                        <div class="course-modal-header">
-                            <div class="icon-close" id="closeModalCourseSix">X</div>
-                            <h3>Mobile App Dev</h3>
-                        </div>
-                        <div class="course-modal-body">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </div>
-                        <div class="course-modal-footer">
-                            <a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
     </div>
 
     <div class="container">
-		<div class="row">
-			<!-- Article content -->
-			<section class="col-sm-12 maincontent">
-				<h3>Testimonios de alumnos</h3>
-				<!-- <p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-				</p>
-				<h3>Bootstrap</h3>
-				<p>Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
-			</section>
-		</div>
-		<!-- <div class="row offs1">
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="thumbnail thumbnail4">
-                            <img src="assets/images/news2.jpg" alt="">
+		<h3>Testimonios de alumnos</h3>
 
-                            <div class="caption">
-                                <h4>
-                                    <a href="#">
-                                        Aliquam eu aliquet quam
-                                    </a>
-                                </h4>
-
-                                <p>
-                                    Souvlaki ignitus carborundum e pluribus unumfacto lingo est igpay atinlay arquee
-                                    selectus. non provisio incongruous feline nolo contendre. Gratuitous octopus niacin,
-                                    sodium glutimate. Quote meon
-                                </p>
-                                <a href="#" data-title="Read More" class="btn-link"><span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="thumbnail thumbnail4">
-                            <img src="assets/images/news3.jpg" alt="">
-
-                            <div class="caption">
-                                <h4>
-                                    <a href="#">
-                                        Factorial non deposit
-                                    </a>
-                                </h4>
-
-                                <p>
-                                    Enumfacto lingo est igpay atinlay arquee selectus.
-                                    non provisio incongruous feline nolo contendre. Grat uitous octopus niacin, sodium
-                                    glutimate. Quote meon an estimate et non interruptus stad
-                                </p>
-                                <a href="#" data-title="Read More" class="btn-link"><span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-xs-12">
-                        <div class="thumbnail thumbnail4">
-                            <img src="assets/images/news4.jpg" alt="">
-
-                            <div class="caption">
-                                <h4>
-                                    <a href="#">
-                                        Deposit quid proquo
-                                    </a>
-                                </h4>
-
-                                <p>
-                                    Arquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus
-                                    niacin, sodium gluti mate. Quote meon an estimate et non interruptus stad ium. Sic
-                                    tempus fugit esperanto
-                                </p>
-                                <a href="#" data-title="Read More" class="btn-link"><span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-        </div> -->
 		<div class="comments" id="comments">
             <div class="content-comments">
                 <div class="comment-item">
@@ -311,10 +260,6 @@
                         </p>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
 

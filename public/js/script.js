@@ -40,106 +40,106 @@ const openSubmenu = (element) => {
 
 if (id('closeModalCourseOne')) {
     id('closeModalCourseOne').addEventListener('click', () => {
-        id('modalCourseOne').classList.toggle('show-modal-course')
+        id('modalCourseOne').classList.toggle('open-modal-course')
     })
 }
 if(id('courseItemOne')){
     id('courseItemOne').addEventListener('click', () => {
-        id('modalCourseOne').classList.toggle('show-modal-course')
+        id('modalCourseOne').classList.toggle('open-modal-course')
     })
 }
 if(id('modalCourseOne')){
     id('modalCourseOne').addEventListener('click', (e) => {
         if (e.target === id('modalCourseOne')){
-            id('modalCourseOne').classList.toggle('show-modal-course')
+            id('modalCourseOne').classList.toggle('open-modal-course')
         }
     })
 }
 
 if(id('closeModalCourseTwo')){
     id('closeModalCourseTwo').addEventListener('click', () => {
-        id('modalCourseTwo').classList.toggle('show-modal-course')
+        id('modalCourseTwo').classList.toggle('open-modal-course')
     })
 }
 if(id('courseItemTwo')){
     id('courseItemTwo').addEventListener('click', () => {
-        id('modalCourseTwo').classList.toggle('show-modal-course')
+        id('modalCourseTwo').classList.toggle('open-modal-course')
     })
 }
 if(id('modalCourseTwo')){
     id('modalCourseTwo').addEventListener('click', (e) => {
         if (e.target === id('modalCourseTwo')){
-            id('modalCourseTwo').classList.toggle('show-modal-course')
+            id('modalCourseTwo').classList.toggle('open-modal-course')
         }
     })
 }
 if(id('closeModalCourseThree')){
     id('closeModalCourseThree').addEventListener('click', () => {
-        id('modalCourseThree').classList.toggle('show-modal-course')
+        id('modalCourseThree').classList.toggle('open-modal-course')
     })
 }
 if(id('courseItemThree')){
     id('courseItemThree').addEventListener('click', () => {
-        id('modalCourseThree').classList.toggle('show-modal-course')
+        id('modalCourseThree').classList.toggle('open-modal-course')
     })
 }
 if(id('modalCourseThree')){
     id('modalCourseThree').addEventListener('click', (e) => {
         if (e.target === id('modalCourseThree')){
-            id('modalCourseThree').classList.toggle('show-modal-course')
+            id('modalCourseThree').classList.toggle('open-modal-course')
         }
     })
 }
 
 if(id('closeModalCourseFour')){
     id('closeModalCourseFour').addEventListener('click', () => {
-        id('modalCourseFour').classList.toggle('show-modal-course')
+        id('modalCourseFour').classList.toggle('open-modal-course')
     })
 }
 if(id('courseItemFour')){
     id('courseItemFour').addEventListener('click', () => {
-        id('modalCourseFour').classList.toggle('show-modal-course')
+        id('modalCourseFour').classList.toggle('open-modal-course')
     })
 }
 if(id('modalCourseFour')){
     id('modalCourseFour').addEventListener('click', (e) => {
         if (e.target === id('modalCourseFour')){
-            id('modalCourseFour').classList.toggle('show-modal-course')
+            id('modalCourseFour').classList.toggle('open-modal-course')
         }
     })
 }
 
 if(id('closeModalCourseFive')){
     id('closeModalCourseFive').addEventListener('click', () => {
-        id('modalCourseFive').classList.toggle('show-modal-course')
+        id('modalCourseFive').classList.toggle('open-modal-course')
     })
 }
 if(id('courseItemFive')){
     id('courseItemFive').addEventListener('click', () => {
-        id('modalCourseFive').classList.toggle('show-modal-course')
+        id('modalCourseFive').classList.toggle('open-modal-course')
     })
 }
 if(id('modalCourseFive')){
     id('modalCourseFive').addEventListener('click', (e) => {
         if (e.target === id('modalCourseFive')){
-            id('modalCourseFive').classList.toggle('show-modal-course')
+            id('modalCourseFive').classList.toggle('open-modal-course')
         }
     })
 }
 if(id('closeModalCourseSix')){
     id('closeModalCourseSix').addEventListener('click', () => {
-        id('modalCourseSix').classList.toggle('show-modal-course')
+        id('modalCourseSix').classList.toggle('open-modal-course')
     })
 }
 if(id('courseItemSix')){
     id('courseItemSix').addEventListener('click', () => {
-        id('modalCourseSix').classList.toggle('show-modal-course')
+        id('modalCourseSix').classList.toggle('open-modal-course')
     })
 }
 if(id('modalCourseSix')){
     id('modalCourseSix').addEventListener('click', (e) => {
         if (e.target === id('modalCourseSix')){
-            id('modalCourseSix').classList.toggle('show-modal-course')
+            id('modalCourseSix').classList.toggle('open-modal-course')
         }
     })
 }
@@ -171,6 +171,136 @@ id('menuMobile').addEventListener('click', closeMenu)
 
 //     })
 // }
+
+// modal para descripcion de los docentes
+if (id('ourTeamOne')) {
+    id('ourTeamOne').addEventListener('click', () => {
+        id('modalTeamOne').classList.toggle('open-modal-team')
+    })
+}
+if (id('closeModalTeamOne')) {
+    id('closeModalTeamOne').addEventListener('click', () => {
+        id('modalTeamOne').classList.toggle('open-modal-team')
+    })
+}
+if (id('modalTeamOne')) {
+    id('modalTeamOne').addEventListener('click', (e) => {
+        if (e.target === id('modalTeamOne')) {
+            id('modalTeamOne').classList.toggle('open-modal-team')
+        }
+    })
+}
+
+if (id('ourTeamTwo')) {
+    id('ourTeamTwo').addEventListener('click', () => {
+        id('modalTeamTwo').classList.toggle('open-modal-team')
+    })
+}
+if (id('closeModalTeamTwo')) {
+    id('closeModalTeamTwo').addEventListener('click', () => {
+        id('modalTeamTwo').classList.toggle('open-modal-team')
+    })
+}
+if (id('modalTeamTwo')) {
+    id('modalTeamTwo').addEventListener('click', (e) => {
+        if (e.target === id('modalTeamTwo')) {
+            id('modalTeamTwo').classList.toggle('open-modal-team')
+        }
+    })
+}
+
+if (id('ourTeamThree')) {
+    id('ourTeamThree').addEventListener('click', () => {
+        id('modalTeamThree').classList.toggle('open-modal-team')
+    })
+}
+if (id('closeModalTeamThree')) {
+    id('closeModalTeamThree').addEventListener('click', () => {
+        id('modalTeamThree').classList.toggle('open-modal-team')
+    })
+}
+if (id('modalTeamThree')) {
+    id('modalTeamThree').addEventListener('click', (e) => {
+        if (e.target === id('modalTeamThree')) {
+            id('modalTeamThree').classList.toggle('open-modal-team')
+        }
+    })
+}
+
+// modal para consultoria
+
+if (id('consultancyItemOne')) {
+    id('consultancyItemOne').addEventListener('click', () => {
+        id('modalConsultancyOne').classList.toggle('open-modal-consultancy')
+    })
+}
+if (id('closeModalConsultancyOne')) {
+    id('closeModalConsultancyOne').addEventListener('click', () => {
+        id('modalConsultancyOne').classList.toggle('open-modal-consultancy')
+    })
+}
+if (id('modalConsultancyOne')) {
+    id('modalConsultancyOne').addEventListener('click', (e) => {
+        if (e.target === id('modalConsultancyOne')) {
+            id('modalConsultancyOne').classList.toggle('open-modal-consultancy')
+        }
+    })
+}
+
+
+if (id('consultancyItemTwo')) {
+    id('consultancyItemTwo').addEventListener('click', () => {
+        id('modalConsultancyTwo').classList.toggle('open-modal-consultancy')
+    })
+}
+if (id('closeModalConsultancyTwo')) {
+    id('closeModalConsultancyTwo').addEventListener('click', () => {
+        id('modalConsultancyTwo').classList.toggle('open-modal-consultancy')
+    })
+}
+if (id('modalConsultancyTwo')) {
+    id('modalConsultancyTwo').addEventListener('click', (e) => {
+        if (e.target === id('modalConsultancyTwo')) {
+            id('modalConsultancyTwo').classList.toggle('open-modal-consultancy')
+        }
+    })
+}
+
+
+if (id('consultancyItemThree')) {
+    id('consultancyItemThree').addEventListener('click', () => {
+        id('modalConsultancyThree').classList.toggle('open-modal-consultancy')
+    })
+}
+if (id('closeModalConsultancyThree')) {
+    id('closeModalConsultancyThree').addEventListener('click', () => {
+        id('modalConsultancyThree').classList.toggle('open-modal-consultancy')
+    })
+}
+if (id('modalConsultancyThree')) {
+    id('modalConsultancyThree').addEventListener('click', (e) => {
+        if (e.target === id('modalConsultancyThree')) {
+            id('modalConsultancyThree').classList.toggle('open-modal-consultancy')
+        }
+    })
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // modal projecto
 if (id('projectItemOne')) {
@@ -333,4 +463,29 @@ if(id('modalProjectNine')){
             id('modalProjectNine').classList.toggle('open-modal-project')
         }
     })
+}
+
+const validateForm = (e) => {
+    e.preventDefault()
+    data = new FormData(id('formContact'))
+
+    fetch('/enviar-email', {
+        method: 'POST',
+        body: data
+    })
+    .then(res => res.json())
+    .then(res => {
+        if (res.type === 'error') {
+            id('messageForm').innerHTML = res.message
+        }else if (res.type === 'success'){
+            id('messageForm').innerHTML = res.message
+            id('messageForm').classList.add('messageForm')
+        }
+
+    })
+}
+
+// validando formulario
+if  (id('btnSendMessage')) {
+    id('btnSendMessage').addEventListener('click', validateForm)
 }

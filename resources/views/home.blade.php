@@ -5,7 +5,7 @@
     <header id="head">
         <div class="container">
             <div class="fluid_container">
-                <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4">
+                <div class="camera_wrap camera_emboss pattern_1" id="camera_wrap_4" style="height: 400px !important">
                     <div data-thumb="{{ secure_asset('images/slides/thumbs/slide1.jpg') }}" data-src="{{ secure_asset('images/slides/slide1.jpg') }}">
                     </div>
                     <div data-thumb="{{ secure_asset('images/slides/thumbs/slide2.jpg') }}" data-src="{{ secure_asset('images/slides/slide2.jpg') }}">

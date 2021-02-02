@@ -2,230 +2,250 @@
 @section('title', "Consultoria")
 
 @section('content')
-    {{-- <header id="head" class="secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8">
-                    <h1>Services</h1>
+
+    <section class="container">
+        <h3>Ponemos a tu disposición un conjunto de consultorías en:</h3>
+        <div class="consultancy">
+            <div class="content-consultancy">
+                <div class="consultancy-item" id="consultancyItemOne">
+                    <div class="consultancy-item-header">
+                        <img src="{{ secure_asset('images/consultancy/img1.png') }}" alt="">
+                    </div>
+                    <div class="consultancy-item-body">
+                        <h4>Servicios de consultoría en automatización industrial</h4>
+                    </div>
+                </div>
+                <div class="modal-consultancy" id="modalConsultancyOne">
+                    <div class="content-modal-consultancy" id="contentModalConsultancyOne">
+                        <div class="modal-consultancy-header">
+                            <h4 class="modal-consultancy-title">Servicios de consultoría en automatización industrial</h4>
+                            <div class="icon-close-modal-consultancy" id="closeModalConsultancyOne">X</div>
+                        </div>
+                        <div class="modal-consultancy-body">
+                            <div>
+                                <article>
+                                    <p>
+                                        Optimización de la sintonización de controladores PID a través del uso de herramientas no convencionales (Inteligencia Artificial):
+                                    </p>
+                                    <ul>
+                                        <li>Disminución de uso de recursos</li>
+                                        <li>Disminución del Setling Time (Tiempo de llegada al Valor Deseado)</li>
+                                        <li>Suavización del transitorio de procesos frágiles (Overshoot)</li>
+                                        <li>Disminución de efectos generados por agentes externos (Disturbios: Temperatura Ambiente, Contaminación sonora, Vibraciones, etc.)</li>
+                                    </ul>
+                                </article>
+                                <article>
+                                    Modelamiento de procesos industriales con herramientas inteligentes, a través de la adquisición de data de sensores previamente instalados, para la simulación y evaluación del comportamiento de los procesos en condiciones desconocidas.
+                                </article>
+                            </div>
+                            <div>
+                                <article>
+                                    Implementación de sensores y centros de adquisición de data para el Modelamiento de Procesos y Toma de Decisiones.
+                                </article>
+                                <article>
+                                    Diseño, simulación, análisis e implementación de sistemas de automatización con: PID o Entornos Programables, PLC, etc. Con los objetivos del Incremento de Productividad, Aumento de Eficiencia, Aumento de Calidad, Disminución de Costos, Disminución del Riesgo Humano y Disminución del Error Humano.
+                                </article>
+                                <article>
+                                    Automatización de procesos digitales, lo que permitirá a nuestros clientes, automatizar procesos repetitivos que realicen por medios digitales - como la redacción de informes, rescate de información, procesos digitales engorrosos y repetitivos, entre otros - lo que les permitirá ahorrar un recurso tan importante como lo es EL TIEMPO y que, además, permitirá disminuir la cantidad de errores que se podrían cometer tras el cansancio por hacer una misma tarea repetidas veces.
+
+                                </article>
+                            </div>
+                        </div>
+                        <div class="modal-consultancy-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Quiero cotizar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="consultancy-item" id="consultancyItemTwo">
+                    <div class="consultancy-item-header">
+                        <img src="{{ secure_asset('images/consultancy/img2.png') }}" alt="">
+                    </div>
+                    <div class="consultancy-item-body">
+                        <h4>Servicio de consultoría en localización y distribución de plantas, almacenes y sucursales</h4>
+                    </div>
+                </div>
+                <div class="modal-consultancy" id="modalConsultancyTwo">
+                    <div class="content-modal-consultancy" id="contentModalConsultancyTwo">
+                        <div class="modal-consultancy-header">
+                            <h4 class="modal-consultancy-title">Servicio de consultoría en localización y distribución de plantas, almacenes y sucursales</h4>
+                            <div class="icon-close-modal-consultancy" id="closeModalConsultancyTwo">X</div>
+                        </div>
+                        <div class="modal-consultancy-body">
+                            <div>
+                                <article>
+                                    <p>
+                                        Localización optimizada (optimización de la ubicación) para una nueva planta industrial, almacenes o expansión de planta a través del estudio de:
+                                    </p>
+                                    <ul>
+                                        <li>Estudio de mercado</li>
+                                        <li>Estudio del transporte y distribución</li>
+                                        <li>Estudio de proximidad de la materia prima e insumos</li>
+                                        <li>Impacto ambiental</li>
+                                        <li>Aceptación social</li>
+                                        <li>Factores políticos y legales</li>
+                                        <li>Disponibilidad y calidad de recursos</li>
+                                        <li>Estudio de la mano de obra</li>
+                                        <li>Estudio de competencia y proveedores</li>
+                                        <li>Estudio de costos y gastos</li>
+                                    </ul>
+                                </article>
+                            </div>
+                            <div>
+                                <article>
+                                    <p>
+                                        Distribución optimizada de plantas industriales, almacenes, sucursales existentes o de nueva instalación a través de:
+                                    </p>
+                                    <ul>
+                                        <li>Dimensionamiento de las máquinas en función del espaciamiento y requerimiento del cliente</li>
+                                        <li>Distribución de maquinarias, materiales e instalaciones (baños, comedor, oficinas, etc.)</li>
+                                        <li>Distancias mínimas de seguridad para las personas y máquinas</li>
+                                        <li>Lineamientos legales de distribución</li>
+                                        <li>Señalizaciones</li>
+                                    </ul>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="modal-consultancy-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Quiero cotizar</button></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="consultancy-item" id="consultancyItemThree">
+                    <div class="consultancy-item-header">
+                        <img src="{{ secure_asset('images/consultancy/img3.png') }}" alt="">
+                    </div>
+                    <div class="consultancy-item-body">
+                        <h4>Servicio de consultoría en gestión de materiales e inventarios, pronóstico de la demanda y estudio de mermas.</h4>
+                    </div>
+                </div>
+                <div class="modal-consultancy" id="modalConsultancyThree">
+                    <div class="content-modal-consultancy" id="contentModalConsultancyThree">
+                        <div class="modal-consultancy-header">
+                            <h4 class="modal-consultancy-title">Servicio de consultoría en gestión de materiales e inventarios, pronóstico de la demanda y estudio de mermas.</h4>
+                            <div class="icon-close-modal-consultancy" id="closeModalConsultancyThree">X</div>
+                        </div>
+                        <div class="modal-consultancy-body">
+                            <div>
+                                <article>
+                                    Implementación de sistemas de gestión de materiales e inventarios con el objetivo de llevar y mantener un sistema de inventarios que maximice el beneficio de la rotación, control estricto y orden de los materiales e insumos.
+                                </article>
+                                <article>
+                                    Implementación de sistemas de pronóstico de la demanda con el uso de inteligencia artificial con el objetivo de diseñar e implementar un modelo de pronóstico de la demanda con un error mínimo que le permita realizar su función de predecir con un resultado altamente cercano a la realidad.
+                                </article>
+                            </div>
+                            <div>
+                                <article>
+                                    Estudio de aprovechamiento de mermas con el objetivo de minimizar los costos de proceso y establecer formas inteligentes para aumentar su factor ecoamigable.
+                                </article>
+                            </div>
+                        </div>
+                        <div class="modal-consultancy-footer">
+                            <a href="{{ secure_url('contacto') }}"><button class="btn btn-primary">Quiero cotizar</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header> --}}
-
-    <div id="courses">
-		<section class="container">
-			<h3>Cursos</h3>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="course-item" id="courseItemOne">
-						<i class="fa fa-cogs fa-5x"></i>
-						<div class="text">
-							<h3>Responsive Design</h3>
-						</div>
-					</div>
-				</div>
-				<div class="container-course-modal" id="modalCourseOne">
-					<div class="content-course-modal" id="contentModalCourseOne">
-						<div class="course-modal-header">
-							<div class="icon-close" id="closeModalCourseOne">X</div>
-							<h3>Responsive Design</h3>
-						</div>
-						<div class="course-modal-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</div>
-						<div class="course-modal-footer">
-							<a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="course-item" id="courseItemTwo">
-						<i class="fa fa-leaf fa-5x"></i>
-						<div class="text">
-							<h3>HTML5/CSS3</h3>
-						</div>
-					</div>
-				</div>
-				<div class="container-course-modal" id="modalCourseTwo">
-					<div class="content-course-modal" id="contentModalCourseTwo">
-						<div class="course-modal-header">
-							<div class="icon-close" id="closeModalCourseTwo">X</div>
-							<h3>HTML5/CSS3</h3>
-						</div>
-						<div class="course-modal-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</div>
-						<div class="course-modal-footer">
-							<a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="course-item" id="courseItemThree">
-						<i class="fa fa-tachometer fa-5x"></i>
-						<div class="text">
-							<h3>Web Designing</h3>
-						</div>
-					</div>
-				</div>
-				<div class="container-course-modal" id="modalCourseThree">
-					<div class="content-course-modal" id="contentModalCourseThree">
-						<div class="course-modal-header">
-							<div class="icon-close" id="closeModalCourseThree">X</div>
-							<h3>Web Designing</h3>
-						</div>
-						<div class="course-modal-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</div>
-						<div class="course-modal-footer">
-							<a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="course-item" id="courseItemFour">
-						<i class="fa fa-eye fa-5x"></i>
-						<div class="text">
-							<h3>Web App Dev</h3>
-						</div>
-					</div>
-				</div>
-				<div class="container-course-modal" id="modalCourseFour">
-					<div class="content-course-modal" id="contentModalCourseFour">
-						<div class="course-modal-header">
-							<div class="icon-close" id="closeModalCourseFour">X</div>
-							<h3>Web App Dev</h3>
-						</div>
-						<div class="course-modal-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</div>
-						<div class="course-modal-footer">
-							<a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="course-item" id="courseItemFive">
-						<i class="fa fa-quote-right fa-5x"></i>
-						<div class="text">
-							<h3>Data Base</h3>
-						</div>
-					</div>
-				</div>
-				<div class="container-course-modal" id="modalCourseFive">
-					<div class="content-course-modal" id="contentModalCourseFive">
-						<div class="course-modal-header">
-							<div class="icon-close" id="closeModalCourseFive">X</div>
-							<h3>Data Base</h3>
-						</div>
-						<div class="course-modal-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</div>
-						<div class="course-modal-footer">
-							<a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="course-item" id="courseItemSix">
-						<i class="fa fa-arrows fa-5x"></i>
-						<div class="text">
-							<h3>Mobile App Dev</h3>
-						</div>
-					</div>
-				</div>
-				<div class="container-course-modal" id="modalCourseSix">
-					<div class="content-course-modal" id="contentModalCourseSix">
-						<div class="course-modal-header">
-							<div class="icon-close" id="closeModalCourseSix">X</div>
-							<h3>Mobile App Dev</h3>
-						</div>
-						<div class="course-modal-body">
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-						</div>
-						<div class="course-modal-footer">
-							<a href="{{ secure_url('contacto') }}"><button type="button" class="btn btn-success">Inscripcion</button></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-    </div>
-
+    </section>
     <div class="container">
-		<div class="row">
-			<!-- Article content -->
-			<section class="col-sm-12 maincontent">
-				<h3>Responsive Website</h3>
-				<p>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-				</p>
-				<h3>Bootstrap</h3>
-				<p>Standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-			</section>
-		</div>
-		<div class="row offs1">
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="thumbnail thumbnail4">
-                    <img src="{{ secure_asset('images/news2.jpg') }}" alt="">
-                    <div class="caption">
-                        <h4>
-                            <a href="#">
-                                Aliquam eu aliquet quam
-                            </a>
-                        </h4>
+        <h3>Testimonios de alumnos</h3>
+        <div class="comments" id="comments">
+            <div class="content-comments">
+                <div class="comment-item">
+                    <div class="comment-item-header">
+                        <div class="comment-img">
+                            <img src="{{ secure_asset('images/photo-1.jpg') }}" alt="">
+                        </div>
+                        <div class="comment-title">
+                            <p class="comment-title-text">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="comment-item-body">
                         <p>
-                            Souvlaki ignitus carborundum e pluribus unumfacto lingo est igpay atinlay arquee
-                            selectus. non provisio incongruous feline nolo contendre. Gratuitous octopus niacin,
-                            sodium glutimate. Quote meon
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta voluptatum ullam dolores exercitationem, omnis cupiditate et quas ipsum cumque fuga assumenda fugiat provident inventore, ex minima quae, consequatur repudiandae.
                         </p>
-                        <a href="#" data-title="Read More" class="btn-link"><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-item-header">
+                        <div class="comment-img">
+                            <img src="{{ secure_asset('images/photo-2.jpg') }}" alt="">
+                        </div>
+                        <div class="comment-title">
+                            <p class="comment-title-text">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="comment-item-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta voluptatum ullam dolores exercitationem, omnis cupiditate et quas ipsum cumque fuga assumenda fugiat provident inventore, ex minima quae, consequatur repudiandae.
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-item-header">
+                        <div class="comment-img">
+                            <img src="{{ secure_asset('images/photo-3.jpg') }}" alt="">
+                        </div>
+                        <div class="comment-title">
+                            <p class="comment-title-text">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="comment-item-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta voluptatum ullam dolores exercitationem, omnis cupiditate et quas ipsum cumque fuga assumenda fugiat provident inventore, ex minima quae, consequatur repudiandae.
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-item-header">
+                        <div class="comment-img">
+                            <img src="{{ secure_asset('images/photo-4.jpg') }}" alt="">
+                        </div>
+                        <div class="comment-title">
+                            <p class="comment-title-text">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="comment-item-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta voluptatum ullam dolores exercitationem, omnis cupiditate et quas ipsum cumque fuga assumenda fugiat provident inventore, ex minima quae, consequatur repudiandae.
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-item-header">
+                        <div class="comment-img">
+                            <img src="{{ secure_asset('images/photo-3.jpg') }}" alt="">
+                        </div>
+                        <div class="comment-title">
+                            <p class="comment-title-text">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="comment-item-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta voluptatum ullam dolores exercitationem, omnis cupiditate et quas ipsum cumque fuga assumenda fugiat provident inventore, ex minima quae, consequatur repudiandae.
+                        </p>
+                    </div>
+                </div>
+                <div class="comment-item">
+                    <div class="comment-item-header">
+                        <div class="comment-img">
+                            <img src="{{ secure_asset('images/photo-4.jpg') }}" alt="">
+                        </div>
+                        <div class="comment-title">
+                            <p class="comment-title-text">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="comment-item-body">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dicta voluptatum ullam dolores exercitationem, omnis cupiditate et quas ipsum cumque fuga assumenda fugiat provident inventore, ex minima quae, consequatur repudiandae.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="thumbnail thumbnail4">
-                    <img src="{{ secure_asset('images/news3.jpg') }}" alt="">
-
-                    <div class="caption">
-                        <h4>
-                            <a href="#">
-                                Factorial non deposit
-                            </a>
-                        </h4>
-
-                        <p>
-                            Enumfacto lingo est igpay atinlay arquee selectus.
-                            non provisio incongruous feline nolo contendre. Grat uitous octopus niacin, sodium
-                            glutimate. Quote meon an estimate et non interruptus stad
-                        </p>
-                        <a href="#" data-title="Read More" class="btn-link"><span>Read More</span></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="thumbnail thumbnail4">
-                    <img src="{{ secure_asset('images/news4.jpg') }}" alt="">
-
-                    <div class="caption">
-                        <h4>
-                            <a href="#">
-                                Deposit quid proquo
-                            </a>
-                        </h4>
-
-                        <p>
-                            Arquee selectus non provisio incongruous feline nolo contendre. Gratuitous octopus
-                            niacin, sodium gluti mate. Quote meon an estimate et non interruptus stad ium. Sic
-                            tempus fugit esperanto
-                        </p>
-                        <a href="#" data-title="Read More" class="btn-link"><span>Read More</span></a>
-                    </div>
-                </div>
-            </div>
-
         </div>
-	</div>
+    </div>
 @endsection

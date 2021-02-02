@@ -6,7 +6,7 @@
     <meta name="description" content="Portal web">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portal web | @yield('title')</title>
-    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    {{-- <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700"> --}}
 	<link rel="stylesheet" href="{{ secure_asset('css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ secure_asset('css/font-awesome.min.css') }}">
 	<link rel="stylesheet" href="{{ secure_asset('css/bootstrap-theme.css') }}" media="screen">
@@ -20,8 +20,8 @@
     <div class="container-header">
         <header class="content-header">
             <div class="logo">
-                {{-- <a href="{{ secure_url('/') }}"><img src="{{ secure_asset('images/logo.png') }}" alt=""></a> --}}
-                <a href="{{ secure_url('/') }}"><h2>Demo</h3></a>
+                <a href="{{ secure_url('/') }}"><img src="{{ secure_asset('images/logo.png') }}" alt=""></a>
+                {{-- <a href="{{ secure_url('/') }}"><h2>Demo</h3></a> --}}
             </div>
             <div class="container-menu">
                 <div class="menu">
@@ -284,20 +284,17 @@
                 <div class="col-md-4"><div class="title-box clearfix "><h3 class="title-box_primary">Trabaja con nosotros</h3></div>
                     <div class="list styled custom-list">
                         <ul>
-                            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">Docentes de python</a></li>
-                            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">Docentes de metodos numericos</a></li>
-                            <!-- <li><a title="Penatibus et magnis dis parturient montes ascetur ridiculus mus." href="#">RNT Commercial Shopping Mall</a></li>
-                            <li><a title="Morbi nunc odio gravida at cursus nec luctus a lorem. Maecenas tristique orci." href="#">SVN Independent & Duplex Houses</a></li>
-                            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="#">World wide IT park</a></li>
-                            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="#">North Arena SNT Township</a></li> -->
+                            <li><a title="Snatoque penatibus et magnis dis partu rient montes ascetur ridiculus mus." href="{{ secure_url('contacto') }}">Docentes de python</a></li>
+                            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="{{ secure_url('contacto') }}">Docentes de metodos numericos</a></li>
+                            <li><a title="Fusce feugiat malesuada odio. Morbi nunc odio gravida at cursus nec luctus." href="{{ secure_url('contacto') }}">Docentes de BI</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-4"><div class="title-box clearfix "><h3 class="title-box_primary">Redes sociales</h3></div>
                     <blockquote class="blockquote-1">
                         <div class="icons-social-network">
-                            <a href="" class="icon-facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="" class="icon-linkedin"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.facebook.com/AyZAcademy" target="_blank" class="icon-facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="icon-linkedin"><i class="fa fa-linkedin"></i></a>
                         </div>
                     </blockquote>
                 </div>
