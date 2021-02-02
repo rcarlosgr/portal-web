@@ -150,7 +150,7 @@
                     <div class="our-team-body">
                         <h4>Juan Carlos López Espinoza</h4>
                         <h5>
-                            Métodos numérico
+                            Métodos numéricos
                         </h5>
                     </div>
                 </div>

@@ -125,7 +125,7 @@
             </div>
             <div class="payment-item">
                 <div class="payment-item-header">
-                    <img src="{{ secure_asset('images/agentes-all.png') }}" alt="visa">
+                    <img src="{{ secure_asset('images/agentes-all.png') }}" alt="">
                 </div>
                 <div class="payment-item-body">
                     <h4>Para pago por Agente de cuanquier banco.</h4>
