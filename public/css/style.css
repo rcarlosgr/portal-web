@@ -1333,7 +1333,7 @@ height:380px !important;
     display: none;
 }
 .submenu-mobile .menu-item-mobile{
-    border-bottom: 1px solid hsl(210, 50%, 30%);
+    border-bottom: 1px solid hsl(180, 50%, 18%);
 }
 .open-submenu-mobile{
     display: block;
